@@ -1,0 +1,315 @@
+@import "variables"
+
+*, * *
+    margin: 0
+    padding: 0
+
+body
+    font-size: 1.125rem
+    width: 23.4375rem
+    margin: 0 auto
+    line-height: 1.5
+    h1,h2,h3
+        font-family: 'Fraunces', serif
+        font-weight: $bold-fraunces
+    a:link,a:visited,a:hover,a:active
+        text-decoration: none
+    p
+        font-family: 'Barlow', sans-serif
+
+header
+    background-image: url(../images/mobile/image-header.jpg)
+    background-size: contain
+    height: 33.5625rem
+    position: relative
+    .nav
+
+    .nav_logo
+        margin-top: 2rem
+        float: left
+        padding-left: 1.5rem
+    .nav_bars
+        float: right
+        margin-top: 2rem
+        div
+            height: 2px
+            width: 24px
+            background: $white
+            margin: 7px 24px 7px 0px
+            border-radius: 25px
+    h1
+        clear: right
+        margin: 9.375rem auto 0
+        text-align: center
+        color: $white
+        text-transform: uppercase
+        letter-spacing: 3px
+    .arrow-down
+        margin: 3.625rem auto 0
+        text-align: center
+
+.feature-1_img
+    width: 100%
+    height: 19.5rem
+
+.feature-1_text
+    height: 22.8125rem
+    h2
+        margin: 4.5rem 3.5rem 0
+        text-align: center
+    p
+        margin: 2.5rem 1.75rem 2.75rem
+        text-align: center
+        color: $dark-grayish-blue
+    a
+        margin: 0 7.875rem 0
+        font-size: 0.875rem
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-family: 'Fraunces', serif
+        font-weight: $bold-fraunces
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 0.125rem
+            top: 0.60rem
+            left: -0.15rem
+            border-width: 3px
+            border-style: solid
+            border-radius: 0.5rem
+            opacity: 30%
+            z-index: -1
+        &:hover,&:active
+            &::before
+                opacity: 100%
+    h2,a
+        color: $very-dark-desaturated-blue
+
+.features-1_text__yellow
+    a::before
+        background-color: $yellow
+        border-color: $yellow
+
+.features-1_text__red
+    a::before
+        background-color: $soft-red
+        border-color: $soft-red
+
+.nav_links
+    display: none
+    position: absolute
+    height: 20.5rem
+    width: 19.375rem
+    background-color: $white
+    font-family: 'Barlow', sans-serif
+    top: 6rem
+    right: 2rem
+    div
+        margin-top: 2.5rem
+        text-align: center
+        a
+            color: $grayish-blue
+
+    .contact-link
+        font-family: 'Fraunces', serif
+        background-color: $yellow
+        width: 8.75rem
+        height: 1.6875rem
+        margin: 2.5rem auto 0
+        padding: 1.250rem 0
+        border-radius: 2.5rem
+        a
+            color: $very-dark-desaturated-blue
+            text-transform: uppercase
+    &::before
+        content: ""
+        position: absolute
+        border: solid 15px transparent
+        border-bottom-color: $white
+        border-right-color: $white
+        top: -1.75rem
+        left: 17.5rem
+
+.nav_links_open
+    display: block
+
+.feature-2_background1
+    background: url('../images/mobile/image-graphic-design.jpg') no-repeat
+
+.feature-2_background2
+    background: url('../images/mobile/image-photography.jpg') no-repeat
+
+.feature-2
+    height: 37.5rem
+    background-size: contain
+    position: relative
+    .feature-2_text
+        margin-bottom: 4rem
+        position: absolute
+        bottom: 0
+        text-align: center
+        color: $dark-desaturated-cyan
+        h2
+            margin-bottom: 2.625rem
+        p
+
+            margin: 0 1rem
+
+.testimonials
+    margin-top: 4.125rem
+    h3
+        text-transform: uppercase
+        font-size: 0.75rem
+        letter-spacing: 3px
+        text-align: center
+        color: $grayish-blue
+
+.testimonial_client
+    margin: 4.375rem auto
+    .testimonial_client__img
+        text-align: center
+    img
+        width: 4.5rem
+        height: 4.5rem
+        border-radius: 2.25rem
+    p
+        color: $very-dark-grayish-blue
+        text-align: center
+        margin: 0 2.375rem
+    p,.client_details
+        margin-top: 2.5rem
+    .client_details
+        text-align: center
+        b
+            font-family: 'Fraunces', serif
+            font-weight: $bold-fraunces
+        span
+            font-family: 'Barlow', sans-serif
+            font-size: 0.875rem
+            color: $grayish-blue
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    .gallery_img
+        flex-basis: 50%
+    img
+        width: 100%
+        height: 100%
+
+.page_footer
+    background-color: $footer-background
+
+    .footer_logo
+        text-align: center
+        // background-color: $dark-moderate-cyan
+        // mask-image: url('../images/logo.svg')
+        // mask-size: 45%
+        // mask-repeat: no-repeat        
+        height: 40px
+        padding: 4.0625rem 6rem
+        //    mask-position: center
+        svg
+            fill: $dark-moderate-cyan
+    .page_footer_nav
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        a
+            font-family: 'Barlow', sans-serif
+            font-weight: $regular-barlow
+            color: $dark-moderate-cyan
+            &:hover,&:active
+                color: $white
+    .social-link
+        margin-top: 5.625rem
+        display: flex
+        flex-direction: row
+        justify-content: center
+        padding-bottom: 5rem
+        svg
+            margin-right: 1.6875rem
+            fill: $dark-moderate-cyan
+            &:hover,&:active
+                fill: $white
+
+.attribution
+    margin-top: 6rem
+
+@media screen and ( min-width: 992px )
+    body
+        width: 90rem
+    header
+        background: url('../images/desktop/image-header.jpg') no-repeat
+        background-size: contain
+        height: 50rem
+        h1
+            font-size: 2.5rem
+            letter-spacing: 4px
+        .nav_logo
+            margin-top: 3.375rem
+        .arrow-down
+            margin-top: 10rem
+        .nav_bars
+            display: none
+    .nav_links
+        display: flex
+        position: static
+        background-color: transparent
+        justify-content: space-around
+        justify-content: row
+        float: right
+        width: 37.5rem
+        height: 6.875rem
+        margin-top: 3.375rem
+        div
+            flex-basis: 25%
+            height: 6.875rem
+            margin: 0
+            a
+                color: $white
+        .contact-link
+            margin: -1.25rem 2.875rem 0 0
+            background-color: rgba(255, 255, 255, 0.30)
+            a
+                color: $white
+    .features-1
+        display: flex
+        height: 37.5rem
+    .feature-1_img,.feature-1_text
+        flex-basis: 50%
+        height: 100%
+    .feature-1_text
+        h2,p,a
+            margin-left: 10.3125rem
+            margin-right: 7.1875rem
+        h2
+            margin-top: 10.625rem
+            text-align: left
+        p
+            text-align: left
+
+    .features-1_reverse
+        flex-direction: row-reverse
+    .feature-2_flex
+        display: flex
+        flex-direction: row
+    .feature-2
+        flex-basis: 50%
+    .feature-2_background1
+        background: url('../images/desktop/image-graphic-design.jpg') no-repeat
+    .feature-2_background2
+        background: url('../images/desktop/image-photography.jpg') no-repeat
+    .client_details_flex
+        display: flex
+        div
+            flex-basis: 33.33%
+    .gallery
+        display: flex
+        .gallery_img
+            flex-basis: 25%
+    .page_footer>.page_footer_nav
+        justify-content: space-evenly
